@@ -3,19 +3,6 @@
 #include <vector>
 #include <map>
 
-void* operator new (size_t size)
-{
-    std::cout << "new called" << std::endl;
-    return ::operator new(size);
-}
-
-void operator delete (void* ptr)
-{
-    std::cout << "delete called" << std::endl;
-    ::operator delete(ptr);
-}
-
-
 int main()
 {
     std::cout << "Cup Cake" << std::endl;
