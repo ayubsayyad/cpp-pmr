@@ -6,15 +6,15 @@
 int main()
 {
     std::cout << "Cup Cake" << std::endl;
-    int buffer[64] = {};
+    char buffer[64] = {'c'};
     std::pmr::monotonic_buffer_resource pool{std::data(buffer), std::size(buffer)};
     std::pmr::map<int, int> squares{ &pool };
-    std::map<int, int> squaresm;
+    //std::map<int, int> squaresm;
 
     for(int idx = 1; idx <= 164; ++idx)
     {
         squares[idx] = idx*idx;
-        squaresm[idx] = idx*idx;
+        //squaresm[idx] = idx*idx;
     }
 
 
