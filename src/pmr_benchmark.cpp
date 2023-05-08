@@ -55,4 +55,6 @@ int main()
               << "t2 (default pmr alloc): " << t2 << " sec; t1/t2: " << t1/t2 << '\n'
               << "t3 (pmr alloc  no buf): " << t3 << " sec; t1/t3: " << t1/t3 << '\n'
               << "t4 (pmr alloc and buf): " << t4 << " sec; t1/t4: " << t1/t4 << '\n';
+
+    return 0;
 }
